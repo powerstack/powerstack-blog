@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <config>
     <application>
-        <name>Powerstack</name>
+        <name>Powerstack Blog</name>
         <version>1.0</version>
         <author>
-            <name>Author name</name>
-            <email>Author email</email>
+            <name>Christopher Tombleson</name>
+            <email>chris@powerstack-php.org</email>
         </author>
     </application>
     <template>
-        <engine>simple</engine>
+        <engine>twig</engine>
         <viewsdir>app/views</viewsdir>
         <layouts>
             <layout>
@@ -22,10 +22,10 @@
         <engine>simple</engine>
         <savepath>/tmp/powerstack-session</savepath>
     </session>-->
-    <!--<plugins>
-        <memcached>
+    <plugins>
+        <!--<memcached>
             <servers>127.0.0.1:11211</servers>
-        </memcached>
+        </memcached>-->
         <database>
             <driver>(pgsql | mysql | sqlite)</driver>
             <host>localhost</host>
@@ -34,7 +34,7 @@
             <pass>Database passward</pass>
             <port>Database port</port>
         </database>
-        <recaptcha>
+        <!--<recaptcha>
             <publickey>recaptcha public key</publickey>
             <privatekey>recaptcha private key</privatekey>
             <ssl>0</ssl>
@@ -42,11 +42,11 @@
         <piwik>
             <domain>piwik domain</domain>
             <siteid>piwik site ID</siteid>
-        </piwik>
+        </piwik>-->
         <authenication>
             <salt>22 character (a-zA-z0-9) salt</salt>
         </authenication>
-    </plugins>-->
+    </plugins>
     <settings>
         <!--<cookie>
             <expires>3600</expires>
